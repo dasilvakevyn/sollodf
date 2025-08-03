@@ -4,224 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sollo DF - Soluções Sustentáveis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased">
+<body class="bg-secondary-dark-blue text-text-on-dark">
+    
     <!--Header-->
     <header>
-        <nav class="container-nav container">
-            <!--Logo-->
-            <a href="#" class="logo">
-                <img src="imsg/logo.png" alt="Logo da Sollo DF">
-            </a>
-
-            <!--Mobile Menu Button-->
+        <nav class="container container-nav">
+            <a href="#home" class="logo">Sollo <span>DF</span></a>
+             <!--Mobile Menu Button-->
             <button id="mobile-menu-button" class="mobile-menu-button">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
+                <i class="fas fa-bars"></i>
             </button>
-
-            <!--Navigation Links-->
-            <div id="navigation-menu" class="navigation-menu">
+            <div class="hidden navigation-menu" id="mobile-menu">
                 <a href="#home">Home</a>
-                <a href="#services">Serviços</a>
-                <a href="#co2-emission">Emissão de CO²</a>
-                <a href="#about">Sobre</a>
-                <a href="#contact" class="cta-button">Contato</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#emissao-co2">Emissão CO2</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato" class="nav-contact-button">Contato</a>
             </div>
         </nav>
     </header>
 
-    <!--Hero Section-->
-    <section id="home" class="hero-section">
-        <div class="container content">
-            <h1>Soluções Sustentáveis para um <span>Futuro Melhor</span></h1>
-            <p>Simplificamos a gestão de resíduos e promovemos a sustentabilidade em sua empresa, com eficiência e inovação.</p>
-            <a href="#services" class="cta-button">Descubra Nossas Soluções</a>
-        </div>
-    </section>
+    <main>
+        
+        <!--Hero Section-->
+        <section id="home" class="hero-section">
+            <div class="content">
+                <h1 class="text-on-dark">Soluções Sustentáveis para um <span>Futuro Melhor</span></h1>
+                <p>Reduzindo a pegada de carbono e otimizando a logística para um amanhã mais verde.</p>
+                <a href="#servicos" class="cta-button">
+                    Conheça Nossas Soluções
+                </a>
+            </div>
+        </section>
 
-    <!--Services Section-->
-    <section id="services" class="services-section">
-        <div class="container text-center">
-            <h2>Nossos Serviços</h2>
-            <p>Oferecemos uma gama completa de serviços para ajudar a sua empresa a alcançar metas de sustentabilidade.</p>
+        <!--Services Section-->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="service-cards">
 
-            <div class="service-cards">
-                <!--Service Card 1-->
-                <div class="service-card">
-                    <div class="icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                        </svg>
-                    </div>
-                    <h3>Gestão de Resíduos</h3>
-                    <p>Soluções completas para coleta, transporte e destinação correta de resíduos, garantindo conformidade ambiental.</p>
-                </div>
+                    <!--Card Caminhões Elétricos-->
+                     <div class="service-card">
+                        <div class="icon"><i class="fas fa-truck-monster"></i></div>
+                        <h3>Entregas Intermunicipais</h3>
+                        <p>Utilizamos caminhões 100% elétricos para entregas rápidas e eficientes em curtas distâncias, reduzindo drasticamente a emissão de CO2.</p>
+                     </div>
 
-                <!--Service Card 2-->
-                <div class="service-card">
-                    <div class="icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M18 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-9-9a5.002 5.002 0 006.001 0M12 14v7m-4 0h8"></path>
-                        </svg>
-                    </div>
-                    <h3>Consultoria Ambiental</h3>
-                    <p>Assessoria especializada para implementar práticas sustentáveis e otimizar processos ecológicos.</p>
-                </div>
+                     <!--Card Carretas Híbridas-->
+                     <div class="service-card">
+                        <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Logística Interestadual</h3>
+                        <p>Nossas carretas híbridas combinam eficiência e sustentabilidade para viagens de longa distância, garantindo entregas ecológicas.</p>
+                     </div>
 
-                <!--Service Card 3-->
-                <div class="service-card">
-                    <div class="icon">
-                        <svg fill="none" stroke-linecap="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3>Logística Reversa</h3>
-                    <p>Desenvolvemos e implementamos sistemas de logística reversa para seus produtos pós-consumo.</p>
+                     <!--Card Aluguel COntêineres-->
+                     <div class="service-card">
+                        <div class="icon"><div class="fas fa-box"></div></div>
+                        <h3>Armazenagem Sustentável</h3>
+                        <p>Aluguel de contêineres em nossa sede, com energia 100% renovável e zero custo de energia, para a segurança e preservação de suas mercadorias.</p>
+                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--CO2 Emission & Comparison Section-->
-    <section id="co2emission" class="co2-emission">
-        <div class="container">
-            <div class="co2-content">
-                <div class="co2-text">
-                    <h2>Nossa Emissão de CO2</h2>
-                    <p>Comparamos a emissão de CO2 por km rodado entre caminhões tradicionais (caminhões a diesel) e os caminhões híbridos e elétricos da Sollo, demonstrando nosso compromisso com a sustentabilidade. A cada 100 km rodados, nossos caminhões emitem apenas uma fração de CO2.</p>
+        <!--CO2 & Pricing Comparison Section-->
+        <section id="emissao-co2" class="co2-emission">
+            <div class="container">
+
+                <!--CO2 Graph-->
+                <h2>Emissão de CO2 por km rodado</h2>
+                <div class="co2-charts-wrapper">
+
+                    <!--Electric vs Diesel-->
                     <div class="co2-chart-container">
-                        <canvas id="co2Chart"></canvas>
+                        <h3>Caminhões Intermunicipais</h3>
+                        <canvas id="co2-chart-intermunicipal"></canvas>
+                    </div>
+
+                    <!--Hibrid vs Diesel-->
+                    <div class="co2-chart-container">
+                        <h3>Carretas Interestaduais</h3>
+                        <canvas id="co2-chart-interestadual"></canvas>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container comparison-content">
-            <div class="comparison-text">
-                <h2>Comparação de Custos de Nossos Serviços</h2>
-                <p>Nossos valores são calculados para oferecer a melhor relação custo-benefício e um impacto ambiental significativamente reduzido. Abaixo, apresentamos uma estimativa comparativa de nossos preços com os da concorrência.</p>
+                <!--Pricing Comparison-->
+                <h2>Comparação de Preços</h2>
                 <div class="comparison-table-container">
-                    <p class="table-title">Custo de Entregas por Km</p>
-                    <table class="table-title">
+                    <table class="comparison-table" id="table-wrapper">
                         <thead>
                             <tr>
-                                <th>Serviço</th>
+                                <th class="roudned-t-lg">Serviço</th>
                                 <th>Sollo DF</th>
-                                <th>Concorrentes (Valor Estimado)</th>
+                                <th class="rounded-t-lg">Concorrente</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Entrega C. Elétrico (até 100 km)</td>
-                                <td>R$1.472,00</td>
-                                <td>R$1.600,00</td>
+                                <td>Entregas Elétricas (até 100 km)</td>
+                                <td class="price-sollo">R$1.472,00</td>
+                                <td class="price-competitor">R$1.600,00</td>
                             </tr>
                             <tr>
-                                <td>Entrega C. Elétrico (até 200 km)</td>
-                                <td>R$2.672,00</td>
-                                <td>R$2.900,00</td>
+                                <td>Entregas Elétricas (até 200 km)</td>
+                                <td class="price-sollo">R$2.672,00</td>
+                                <td class="price-competitor">R$2.900,00</td>
                             </tr>
                             <tr>
-                                <td>Entrega C. Híbrido (até 200 km)</td>
-                                <td>R$2.672,00</td>
-                                <td>R$2.900,00</td>
+                                <td>Entregas Híbridas (até 200 km)</td>
+                                <td class="price-sollo">R$2.672,00</td>
+                                <td class="price-competitor">R$2.900,00</td>
                             </tr>
                             <tr>
-                                <td>Entrega C. Híbrido (até 350 km)</td>
-                                <td>R$4.472,00</td>
-                                <td>R$4.800,00</td>
+                                <td>Entregas Híbridas (até 350 km)</td>
+                                <td class="price-sollo">R$4.472,00</td>
+                                <td class="price-competitor">R$4.800,00</td>
                             </tr>
                             <tr>
                                 <td>Aluguel de Contêineres (por dia)</td>
-                                <td>R$326,66</td>
-                                <td>R$450,00</td>
+                                <td class="price-sollo">R$326,66</td>
+                                <td class="price-competitor">R$450,00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!--About Section-->
-    <section id="about" class="about-section">
-        <div class="container about-content">
-            <div class="about-text">
-                <h2>Sobre Nós</h2>
-                <p>Na Sollo DF, acreditamos que a sustentabilidade é o caminho para um futuro próspero. Nosso objetivo é capacitar empresas a adotarem práticas mais ecológicas, reduzindo seu impacto ambiental e otimizando recursos. Com uma equipe de especialistas e tecnologias inovadoras, transformamos desafios ambientais em oportunidades de crescimento.</p>
-                <p>Desde a nossa fundação, temos sido parceiros de empresas de todos os portes, ajudando-as a navegar pelas complexidades da legislação ambiental e a implementar soluções eficientes e responsáveis.</p>
-            </div>
-        </div>
-    </section>
-
-    <!--Call to Action Section-->
-    <section class="cta-section">
-        <div class="container text-center">
-            <h2>Pronto para Transformar a sua Empresa?</h2>
-            <p>Junte-se a nós na jornada rumo a um futuro mais verde. Entre em contato e descubra!</p>
-            <a href="#contact" class="cta-button">
-                Fale Conosco
-            </a>
-        </div>
-    </section>
-
-    <!--Contact Section-->
-    <section id="contact" class="contact-section">
-        <div class="container text-center">
-            <h2>Entre em Contato</h2>
-            <p>Tem alguma dúvida ou gostaria de um orçamento? Preencha o formulário abaixo ou envie uma mensagem em nossas redes.</p>
-            <div class="contact-form-container">
-                <form>
-                    <div>
-                        <label for="name">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                <!--Calc CO2 Footprint
+                <div class="calculator-container">
+                    <h3>Calculadora de Pegada de Carbono</h3>
+                    <p>Insira a distância da sua entrega e veja o impacto positivo de escolher a Sollo DF!</p>
+                    <div class="calculator-input-group">
+                        <input type="number" id="distance-input" placeholder="Distância em Km" min="1">
+                        <button id="calculate-button" class="calculator-button">
+                            Calcular Economia
+                        </button>
                     </div>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="seu.email@example.com">
+                    <div id="loading-spinner" class="loading-spinner">
+                        <div></div>
                     </div>
-                    <div>
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem..." required></textarea>
+                    <div id="results-container" class="results-container">
+                        <p id="co2-sollo"></p>
+                        <p id="co2-competitor"></p>
+                        <p id="co2-saved"></p>
+                        <div id="gemini-message" class="gemini-message"></div>
                     </div>
-                    <button type="submit">Enviar Mensagem</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <p>Ou entre em contato diretamente:</p>
-                <p><strong>Email:</strong> <a href="mailto:sollodf359@gmail.com">sollodf359@gmail.com</a></p>
-                <p><strong>Telefone:</strong> <a href="tel:+5521987654321">+55 (21) 98765-4321</a></p>
-            </div>
-        </div>
-    </section>
+                </div>
+            </div>-->
+        </section>
 
-    <!--Footer Section-->
+        <!--About Section-->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2>Sobre a Sollo DF</h2>
+                <p>A Sollo DF nasceu com a missão de revolucionar o setor de logística,
+                    oferecendo soluções sustentáveis que não apenas otimizam a cadeia de suprimentos,
+                    mas também protegem o meio ambiente. Combinamos tecnologia de ponta,
+                    como nossa frota híbrida e elétrica, com infraestrutura inovadora,
+                    como nossos prédios movidos a energia solar, para criar um modelo de negócio
+                    rentável e ecologicamente responsável.</p>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2>Entre em Contato!</h2>
+                <div class="contact-content">
+                    <img src="img/mascote.png" alt="Mascote - Gato Raro" class="mascot-image">
+                    <div class="contact-form-wrapper">
+                        <p>Estamos prontos para atender você e sua empresa. Preencha o formulário
+                            abaixo ou use os contatos para falar com nossa equipe.</p>
+                            <form class="contact-form">
+                                <div>
+                                    <label for="name">Nome</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+                                </div>
+                                <div>
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" placeholder="seu.email@example.com" required>
+                                </div>
+                                <div>
+                                    <label for="mensagem">Mensagem</label>
+                                    <textarea name="mensagem" rows="4" placeholder="Sua Mensagem..." required></textarea>
+                                </div>
+                                <button type="submit">
+                                    Enviar
+                                </button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOoter-->
     <footer>
-        <div class="container container-footer-content">
-            <div class="logo-footer">Sollo DF</div>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">
-                  <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C17.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg> 
-                </a>
-                <a href="#" aria-label="Instagram">
-                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.519a.75.75 0 01.192.824l-.192.824a.75.75 0 01-.824-.192l-.824.192a.75.75 0 01-.192-.824l.192-.824a.75.75 0 01.824.192zm-1.28 1.48c-.28.08-.57.13-.86.17-.96.15-1.94.21-2.92.17-1.8-.07-3.59-.35-5.3-.84-1.13-.32-2.2-.8-3.1-1.4-.38-.25-.75-.52-1.1-.8-.18-.15-.35-.3-.5-.47-.2-.22-.38-.46-.55-.7-.17-.25-.3-.5-.42-.77-.1-.22-.18-.45-.25-.68-.07-.24-.1-.48-.1-.73-.01-.25.03-.5.08-.74.06-.27.14-.53.23-.79.1-.25.2-.5.32-.74.12-.24.25-.47.4-.7.15-.23.3-.45.47-.67.17-.22.35-.43.54-.63.19-.2.39-.39.6-.57.2-.18.42-.35.64-.5.22-.15.45-.29.68-.42.23-.13.47-.25.7-.36.24-.1.48-.19.73-.27.25-.08.5-.14.75-.19.26-.05.5-.09.76-.12.26-.03.52-.05.78-.06.26-.01.52-.01.78-.01.26 0 .52 0 .78.01.26.01.52.03.78.06.26.03.5.07.76.12.26.05.49.11.73.19.24.08.47.16.7.27.23.11.45.23.68.36.22.15.44.3.64.49.2.19.39.38.57.57.19.2.37.41.54.63.17.22.3.45.42.67.12.24.23.47.32.7.1.23.18.46.25.68.07.24.1.48.1.73.01.25-.03.5-.08.74-.06.27-.14.53-.23.79-.1.25-.2.5-.32.74-.12.24-.25.47-.4-.7-.15-.23-.3-.45-.47-.67-.17-.22-.35-.43-.54-.63-.19-.2-.39-.39-.6-.57-.2-.18-.42-.35-.64-.5-.22-.15-.45-.29-.68-.42-.23-.13-.47-.25-.7-.36-.24-.1-.48-.19-.73-.27-.25-.08-.5-.14-.75-.19-.26-.05-.5-.09-.76-.12-.26-.03-.52-.05-.78-.06-.26-.01-.52-.01-.78-.01-.26 0-.52 0-.78.01-.26.01-.52.03-.78.06-.26.03-.5.07-.76.12z" clip-rule="evenodd" /></svg>
-                </a>
-                <a href="#" aria-label="LinkedIn">
-                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
-                </a>
+        <div class="container text-center">
+            <div class="footer-social-links">
+                <a href="https://instagram.com/sollo.df"><i class="fab fa-instagram" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/sollo-log%C3%ADstica-sustent%C3%A1vel-27a091374/"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p class="copyright">&copy; 2025 Sollo DF. Todos os direitos reservados.</p>
+            <p class="footer-copyright">&copy; 2025 SolloDF. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!--Gato Raro Mascote-->
-    <div id="mascot-popup" class="mascot-popup">
-        <img src="img/gatoraro" alt="Mascote Gato Raro">
-        <p>Olá! Sou o Gato Raro. Que tal se conectar com a gente?</p>
-        <a href="#contact">Fale Conosco!</a>
+    <!--Mascot PopUp-->
+    <div id="popup-mascote" class="mascot-popup-hidden">
+        <button class="close-button" id="close-popup-button">&times;</button>
+        <img src="img/mascote2.png" alt="Mascote da Sollo">
+        <p>Olá, sou o Gato Raro, assistente da Sollo DF! Se ficou alguma dúvida ou desejar contratar nossos serviços:</p>
+        <a href="#contato" id="popup-button">
+            Fale com a gente
+        </a>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
