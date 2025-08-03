@@ -564,8 +564,8 @@
         }
         
         .mascot-image {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             border-radius: 9999px;
             box-shadow: var(--shadow-lg);
         }
@@ -761,13 +761,8 @@
             background-color: #13103550;
             color: var(--primary-orange);
         }
-
-        #table-wrapper {
-            overflow: auto;
-            max-width: 100%;
-        }
         /* Media Queries - Responsividade */
-        @media (min-width: 600px) {
+        @media (min-width: 767px) {
             header .container-nav { flex-wrap: nowrap; }
             .navigation-menu { 
                 display: flex;
