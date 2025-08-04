@@ -425,7 +425,8 @@
             text-align: center;
         }
 
-        .calculator-container p {
+        .calculator-container p,
+        .co2-emission .container p {
             color: var(--text-on-dark);
             text-align: center;
             margin-bottom: 1.5rem;
