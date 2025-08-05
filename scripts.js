@@ -101,7 +101,7 @@
                     // Atualiza o DOM com os resultados
                     co2SolloEl.innerHTML = `Sollo DF (${vehicleType}): <span style="color: var(--primary-orange);">${co2SolloFormatted} kg de CO2</span>`;
                     co2CompetitorEl.innerHTML = `Concorrente (Diesel): <span style="color: var(--accent-light-blue);">${co2CompetitorFormatted} kg de CO2</span>`;
-                    co2SavedEl.innerHTML = `Com a Sollo DF, você economiza: <span style="color: var(--primary-orange); font-weight: 800;">${co2SavedFormatted} kg de CO2</span>`;
+                    co2SavedEl.innerHTML = `Com a Sollo DF, você reduz: <span style="color: var(--primary-orange); font-weight: 800;">${co2SavedFormatted} kg de CO2</span>`;
 
                     // --- Chamada à API do Gemini para gerar a mensagem ---
                     // Prompt para a API
